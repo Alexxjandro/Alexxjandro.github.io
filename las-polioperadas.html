@@ -28,6 +28,7 @@
         font-family: roboto;
         font-size-adjust: auto;
         color: #fff;
+
       }
       .titulo{
         background: #ff4757;
@@ -37,18 +38,16 @@
         padding: 20px;
 
       }
-      .h2-pag2 h2{
-        font-family: roboto;
-        font-size-adjust: 20px;
+      .texto{
+        position: fixed;
+        bottom: 0;
+        width:50%;
+        opacity: 0.5;
+
       }
-      .h2-pag2{
-        display: inline-grid;
-        position: absolute;
-        background: #fff;
-        width: 30%;
-        height: 100%;
-
-
+      .texto h2{
+        color: #fff;
+        background: #000;
       }
     </style>
   </head>
@@ -84,6 +83,10 @@
       <!-- Here we have a page consisting of a video which autoplays and loops. -->
       <amp-story-page id="page-2">
         <amp-story-grid-layer template="fill">
+        <div class=""
+        animate-in="zoom-out"
+        animate-in-delay="0s"
+        animate-in-duration="2.5s">
           <amp-img src="https://4.bp.blogspot.com/-yL5E5Ktzdo8/VgD0JgYdKlI/AAAAAAAADqQ/4bklfqrxsdw/s1600/2F8.jpg"
                    width="720" height="1280"
                    layout="responsive"
@@ -91,9 +94,16 @@
                    animate-in-delay=".3s"
                    animate-in-duration="2.5s">
           </amp-img>
+        </div>
         </amp-story-grid-layer>
-        <amp-story-grid-layer template="fill" class="h2-pag2">
-            <h2>Muchas chicas quieren tener la figura perfecta, y buscan operaciones estéticas para estar mejor y gustar más a la gente.</h2>
+        <amp-story-grid-layer template="vertical">
+          <div class="texto"
+          animate-in="fly-in-left"
+          animate-in-delay=".3s"
+          animate-in-duration="1.5s">
+          <h2 >Muchas chicas quieren tener la figura perfecta, y buscan operaciones estéticas para estar mejor y gustar más a la gente.</h2>
+          </div>
+
         </amp-story-grid-layer>
       </amp-story-page>
 
