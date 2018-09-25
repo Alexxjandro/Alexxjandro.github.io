@@ -8,7 +8,7 @@
     <script async custom-element="amp-story" src="https://cdn.ampproject.org/v0/amp-story-1.0.js"></script>
     <!-- AMP Stories can make use of other AMP extensions such as `amp-video`. However, AMP Stories support only a subset of the available AMP extensions. You can find a full list of the supported extensions [here](https://www.ampproject.org/docs/reference/components/amp-story.html#children-of-amp-story-grid-layer). -->
     <script async custom-element="amp-video" src="https://cdn.ampproject.org/v0/amp-video-0.1.js"></script>
-    <script async custom-element="amp-ad" src="https://cdn.ampproject.org/v0/amp-ad-0.1.js"></script>
+
     <title>Las polioperadas, nueva moda que triunfa entre las jovenes</title>
     <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
     <link rel="canonical" href="https://www.red-viral.com/2015/08/las-polioperadas.html">
@@ -104,9 +104,12 @@
       }
 
     </style>
+
   </head>
 
   <body>
+
+
     <!-- ## Writing the Story -->
     <!-- Stories are declared inside the `amp-story` tag. Story-level metadata is provided via attributes. (The first four attributes are mandatory; the final two are optional, but recommended.) Note that this metadata augments, but does not replace, [Structured Data](https://developers.google.com/search/docs/data-types/article#amp). -->
     <amp-story standalone
@@ -117,8 +120,14 @@
       poster-square-src="https://ampbyexample.com/img/story_dog2_square.jpg"
       poster-landscape-src="https://ampbyexample.com/img/story_dog2_landscape.jpg">
 
+
+
+
       <!-- A story consists of one or more pages. Each page is declared by an `amp-story-page` element. Pages are designed by layering videos, images and text. Here we have a page that uses two layers. One layer filling the available space with an image and one text layer that shows a heading. -->
       <amp-story-page id="page-1">
+
+
+
         <amp-story-grid-layer template="fill">
           <amp-img src="https://1.bp.blogspot.com/-bqpDqNephOs/VgD0KYi-2_I/AAAAAAAADqc/DXUZ0UrZOYk/s1600/8D1.jpg"
                    width="720" height="1280"
@@ -234,18 +243,6 @@
           animate-in-duration="2s">Aquí les presentamos estos ejemplo, opinen ustedes mismos:</h2>
           </amp-story-grid-layer>
       </amp-story-page>
-
-      <amp-story-page id="ads">
-        <amp-story-grid-layer template="fill">
-          <amp-ad width=300 height=250
-          type="adsense"
-          data-ad-client="ca-pub-2559023322502804"
-          data-ad-slot="3391467799">
-     </amp-ad>
-        </amp-story-grid-layer>
-      </amp-story-page>
-
-
 
       <amp-story-page id="page-7">
         <amp-story-grid-layer template="fill">
