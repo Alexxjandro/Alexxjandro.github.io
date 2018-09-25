@@ -12,13 +12,13 @@
   "components": [
     {
       "type": "heading",
-      "text": "Introduction"
+      "text": "Más posts"
     },
     {
-      "type": "small",
-      "title": " AMP Story Hello World",
-      "url": "/stories/introduction/amp_story_hello_world/",
-      "image": "/favicons/android-chrome-256x256.png"
+      "type": "landscape",
+      "title": "Ella es Harlow una hermosa modelo canadiense con vitiligo",
+      "url": "https://www.red-viral.com/2017/08/harlow-modelo-canadiense-con-vitiligo.html",
+      "image": "https://1.bp.blogspot.com/-pWQtcXRMeXc/WqoVVP0CgxI/AAAAAAAAPMk/cBomTAa5P3kKPwcoax0THHsPt4YRnrD4QCLcBGAs/w300/Sin%2Bt%25C3%25ADtulo-1-min.jpg"
     },
     {
       "type": "heading",
