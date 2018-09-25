@@ -1,54 +1,113 @@
-<html ⚡>
-<!-- ## Head -->
-<!-- -->
-<head>
-  <!-- The charset definition must be the first child of the `<head>` tag. -->
-  <meta charset="utf-8">
-  <title> Hello World</title>
-  <!-- The AMP runtime must be loaded as the second child of the `<head>` tag.-->
-  <script async src="https://cdn.ampproject.org/v0.js"></script>
-  <!--
-    AMP HTML files require a canonical link pointing to the regular HTML. If no HTML version exists, it should point to itself.
-  -->
-  <link rel="canonical" href="https://ampbyexample.com/introduction/hello_world/">
-  <!--
-    AMP HTML files require a viewport declaration. It's recommended to include initial-scale=1.
-  -->
-  <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
-  <!--
-    CSS must be embedded inline.
-  -->
-  <style amp-custom>
-    h1 {
-      color: red;
-      background: #000;
-    }
-  </style>
-  <!--
-    The AMP boilerplate.
-  -->
-  <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
-</head>
-<!-- ## Body -->
-<!-- -->
-<body>
-  <!--
-    Most HTML tags can be used directly in AMP HTML.
-  -->
-  <h1>Hello World!</h1>
-  <!--
-    Certain tags, such as the `<img>` tag, are replaced
-    with equivalent or slightly enhanced custom AMP HTML tags (see
-    [HTML Tags in the specification](https://github.com/ampproject/amphtml/blob/master/spec/amp-html-format.md)).
+<!doctype html>
+<html amp lang="es">
+  <head>
+    <meta charset="utf-8">
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
+    <!-- ## Setup -->
+    <!-- AMP Stories are written using AMPHTML and they use their own AMP extension: `amp-story`. The first step is to import the `amp-story` in the header. -->
+    <script async custom-element="amp-story" src="https://cdn.ampproject.org/v0/amp-story-1.0.js"></script>
+    <!-- AMP Stories can make use of other AMP extensions such as `amp-video`. However, AMP Stories support only a subset of the available AMP extensions. You can find a full list of the supported extensions [here](https://www.ampproject.org/docs/reference/components/amp-story.html#children-of-amp-story-grid-layer). -->
+    <script async custom-element="amp-video" src="https://cdn.ampproject.org/v0/amp-video-0.1.js"></script>
+    <title>Stories in AMP - Hello World</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+    <link rel="canonical" href="/stories/introduction/amp_story_hello_world/">
+    <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+    <!-- Stories can be styled using CSS: -->
+    <style amp-custom>
+      amp-story {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI ", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji ", "Segoe UI Emoji ", "Segoe UI Symbol ";
+      }
+      amp-story-page *         color: white;{
 
-    You can use the [ AMP Validator ](https://www.ampproject.org/docs/guides/validate.html) to check
-    if your AMP HTML file is valid AMP HTML. Simply
-    add `#development=1` to an AMP URL. Validation errors will be printed in the Javascript console.
-    You can try it with this website which is built with AMP.
+        text-align: center;
+      }
+      [template=thirds] {
+        padding: 0;
+      }
+    </style>
+  </head>
 
-    Check out the [other examples](/) to learn more about AMP.
-  -->
-  <amp-img src="/img/amp.jpg" width="1080" height="610" layout="responsive"></amp-img>
+  <body>
+    <!-- ## Writing the Story -->
+    <!-- Stories are declared inside the `amp-story` tag. Story-level metadata is provided via attributes. (The first four attributes are mandatory; the final two are optional, but recommended.) Note that this metadata augments, but does not replace, [Structured Data](https://developers.google.com/search/docs/data-types/article#amp). -->
+    <amp-story standalone
+      title="Stories in AMP - Hello World"
+      publisher="AMP Project"
+      publisher-logo-src="https://ampbyexample.com/favicons/coast-228x228.png"
+      poster-portrait-src="https://ampbyexample.com/img/story_dog2_portrait.jpg"
+      poster-square-src="https://ampbyexample.com/img/story_dog2_square.jpg"
+      poster-landscape-src="https://ampbyexample.com/img/story_dog2_landscape.jpg">
 
-</body>
+      <!-- A story consists of one or more pages. Each page is declared by an `amp-story-page` element. Pages are designed by layering videos, images and text. Here we have a page that uses two layers. One layer filling the available space with an image and one text layer that shows a heading. -->
+      <amp-story-page id="page-1">
+        <amp-story-grid-layer template="fill">
+          <amp-img src="https://ampbyexample.com/img/story_dog2.jpg"
+                   width="720" height="1280" 
+                   layout="responsive">
+          </amp-img>
+        </amp-story-grid-layer>
+        <amp-story-grid-layer template="vertical">
+          <h1>Hello World</h1>
+          <p>This is an AMP Story.</p>
+        </amp-story-grid-layer>
+      </amp-story-page>
+
+      <!-- Here we have a page consisting of a video which autoplays and loops. -->
+      <amp-story-page id="page-2">
+        <amp-story-grid-layer template="fill">
+          <amp-video autoplay loop
+                width="720" 
+                height="960"
+                poster="https://ampbyexample.com/img/story_video_dog_cover.jpg"
+                layout="responsive">
+                <source src="https://ampbyexample.com/video/story_video_dog.mp4" type="video/mp4">
+          </amp-video>
+        </amp-story-grid-layer>
+      </amp-story-page>
+
+      <!-- Pre-defined entry animations make it possible to create dynamic pages without videos. The length and initial delay can be customized using the `animate-in-duration` and `animate-in-delay` properties. The [animations sample](../../features/animations/) shows all available animantions in action. -->
+      <amp-story-page id="animation-demo">
+        <amp-story-grid-layer template="fill">
+          <amp-img src="https://ampbyexample.com/img/story_dog4.jpg"
+                   animate-in="fly-in-top"
+                   width="720" height="1280" 
+                   layout="responsive">
+          </amp-img>
+        </amp-story-grid-layer>
+        <amp-story-grid-layer template="thirds">
+          <h2 animate-in="fly-in-bottom"
+              grid-area="lower-third"
+              animate-in-delay="0.4s">
+            Best walk ever!
+          </h2>
+        </amp-story-grid-layer>
+      </amp-story-page>
+
+      <!-- Stories can use predefined layouts to style the page. Here we're using the `thirds` template. For an overview about the available layouts take a look at the [layouts sample](../../features/layouts/). -->
+      <amp-story-page id="layout-demo">
+        <amp-story-grid-layer template="thirds">
+          <amp-img grid-area="upper-third"
+                   src="https://ampbyexample.com/img/story_thirds_1.jpg"
+                   width="560" height="420" 
+                               layout="responsive">
+          </amp-img>
+          <amp-img grid-area="middle-third"
+                   src="https://ampbyexample.com/img/story_thirds_2.jpg"
+                   width="560" height="420" 
+                               layout="responsive">
+          </amp-img>
+          <amp-img grid-area="lower-third"
+                   src="https://ampbyexample.com/img/story_thirds_3.jpg"
+                   width="560" 
+                   height="420" 
+                   layout="responsive">
+          </amp-img>
+        </amp-story-grid-layer>
+      </amp-story-page>
+
+      <!-- A "bookend" panel containing links to other resources will appear on the last page of your story if you include an `amp-story-bookend` that references a [bookend JSON config](/json/bookend.json). -->
+      <amp-story-bookend src="https://ampbyexample.com/json/bookend.json" layout="nodisplay">
+      </amp-story-bookend>
+    </amp-story>
+  </body>
 </html>
