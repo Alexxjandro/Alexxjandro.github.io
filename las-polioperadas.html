@@ -16,10 +16,14 @@
     <style amp-custom>
       amp-story {
         font-family: -apple-system, BlinkMacSystemFont, "Segoe UI ", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji ", "Segoe UI Emoji ", "Segoe UI Symbol ";
+       padding: 0; margin: 0;
       }
-      amp-story-page *         color: white;{
-
+      amp-story-page {
+        padding: 0; margin: 0;
         text-align: center;
+      }
+      amp-story-grid-layer{
+        padding: 0; margin: 0;
       }
       [template=thirds] {
         padding: 0;
@@ -36,18 +40,64 @@
         height: auto;
         width: 100%;
         padding: 20px;
-
       }
       .texto{
         position: fixed;
         bottom: 0;
         width:50%;
         opacity: 0.5;
-
       }
-      .texto h2{
+      .texto h2, .texto-6 h2{
         color: #fff;
         background: #000;
+      }
+      .texto-6{
+        position: fixed;
+        bottom: 0;
+        width:100%;
+        opacity: 0.5;
+        height: 60%;
+        text-align: center;
+      }
+      .h2pag2 {
+        color: #ff4757;
+        margin: 20px;
+      }
+      .h2pag2 h2{
+        font-size: 40px;
+      text-shadow: rgb(245, 245, 245) 3px 0px 0px, rgb(245, 245, 245) 2.83487px 0.981584px 0px, rgb(245, 245, 245) 2.35766px 1.85511px 0px, rgb(245, 245, 245) 1.62091px 2.52441px 0px, rgb(245, 245, 245) 0.705713px 2.91581px 0px, rgb(245, 245, 245) -0.287171px 2.98622px 0px, rgb(245, 245, 245) -1.24844px 2.72789px 0px, rgb(245, 245, 245) -2.07227px 2.16926px 0px, rgb(245, 245, 245) -2.66798px 1.37182px 0px, rgb(245, 245, 245) -2.96998px 0.42336px 0px, rgb(245, 245, 245) -2.94502px -0.571704px 0px, rgb(245, 245, 245) -2.59586px -1.50383px 0px, rgb(245, 245, 245) -1.96093px -2.27041px 0px, rgb(245, 245, 245) -1.11013px -2.78704px 0px, rgb(245, 245, 245) -0.137119px -2.99686px 0px, rgb(245, 245, 245) 0.850987px -2.87677px 0px, rgb(245, 245, 245) 1.74541px -2.43999px 0px, rgb(245, 245, 245) 2.44769px -1.73459px 0px, rgb(245, 245, 245) 2.88051px -0.838247px 0px;
+
+      }
+      .h2pg4{
+          padding: 10px;
+      }
+      #page-4 h2, #page-5 h2{
+        color:#fff;
+        margin-top: 70px;
+        font-size: 35px;
+        text-shadow: rgb(32, 28, 41) 3px 0px 0px, rgb(32, 28, 41) 2.83487px 0.981584px 0px, rgb(32, 28, 41) 2.35766px 1.85511px 0px, rgb(32, 28, 41) 1.62091px 2.52441px 0px, rgb(32, 28, 41) 0.705713px 2.91581px 0px, rgb(32, 28, 41) -0.287171px 2.98622px 0px, rgb(32, 28, 41) -1.24844px 2.72789px 0px, rgb(32, 28, 41) -2.07227px 2.16926px 0px, rgb(32, 28, 41) -2.66798px 1.37182px 0px, rgb(32, 28, 41) -2.96998px 0.42336px 0px, rgb(32, 28, 41) -2.94502px -0.571704px 0px, rgb(32, 28, 41) -2.59586px -1.50383px 0px, rgb(32, 28, 41) -1.96093px -2.27041px 0px, rgb(32, 28, 41) -1.11013px -2.78704px 0px, rgb(32, 28, 41) -0.137119px -2.99686px 0px, rgb(32, 28, 41) 0.850987px -2.87677px 0px, rgb(32, 28, 41) 1.74541px -2.43999px 0px, rgb(32, 28, 41) 2.44769px -1.73459px 0px, rgb(32, 28, 41) 2.88051px -0.838247px 0px;
+      }
+      .texto-7{
+        padding: 20px;
+        color: #fff;
+        text-shadow: rgb(32, 28, 41) 3px 0px 0px, rgb(32, 28, 41) 2.83487px 0.981584px 0px, rgb(32, 28, 41) 2.35766px 1.85511px 0px, rgb(32, 28, 41) 1.62091px 2.52441px 0px, rgb(32, 28, 41) 0.705713px 2.91581px 0px, rgb(32, 28, 41) -0.287171px 2.98622px 0px, rgb(32, 28, 41) -1.24844px 2.72789px 0px, rgb(32, 28, 41) -2.07227px 2.16926px 0px, rgb(32, 28, 41) -2.66798px 1.37182px 0px, rgb(32, 28, 41) -2.96998px 0.42336px 0px, rgb(32, 28, 41) -2.94502px -0.571704px 0px, rgb(32, 28, 41) -2.59586px -1.50383px 0px, rgb(32, 28, 41) -1.96093px -2.27041px 0px, rgb(32, 28, 41) -1.11013px -2.78704px 0px, rgb(32, 28, 41) -0.137119px -2.99686px 0px, rgb(32, 28, 41) 0.850987px -2.87677px 0px, rgb(32, 28, 41) 1.74541px -2.43999px 0px, rgb(32, 28, 41) 2.44769px -1.73459px 0px, rgb(32, 28, 41) 2.88051px -0.838247px 0px;
+      }
+      .center-text{
+        text-align: center;
+        margin-top: 50vh;
+
+      }
+      .center-text h2{
+            background: #fff;
+      }
+      .wrapper{
+      padding: 0;
+      margin: 0;
+      }
+      .wrapper amp-img{
+        width: 50%;
+        height: 40%;
+        float: left;
       }
     </style>
   </head>
@@ -80,6 +130,7 @@
           </amp-story-grid-layer>
       </amp-story-page>
 
+
       <!-- Here we have a page consisting of a video which autoplays and loops. -->
       <amp-story-page id="page-2">
         <amp-story-grid-layer template="fill">
@@ -108,44 +159,152 @@
       </amp-story-page>
 
       <!-- Pre-defined entry animations make it possible to create dynamic pages without videos. The length and initial delay can be customized using the `animate-in-duration` and `animate-in-delay` properties. The [animations sample](../../features/animations/) shows all available animantions in action. -->
-      <amp-story-page id="animation-demo">
+      <amp-story-page id="page-3">
         <amp-story-grid-layer template="fill">
-          <amp-img src="https://ampbyexample.com/img/story_dog4.jpg"
-                   animate-in="fly-in-top"
+          <amp-img src="https://4.bp.blogspot.com/-L2THE07ptrk/VgD0LEyidOI/AAAAAAAADq0/109U0qUt6RY/s1600/A5C.jpg"
+                   animate-in="fade-in"
+                   animate-in-delay=".3s"
+                   animate-in-duration="2.5s"
                    width="720" height="1280"
                    layout="responsive">
           </amp-img>
         </amp-story-grid-layer>
-        <amp-story-grid-layer template="thirds">
+        <amp-story-grid-layer template="thirds" class="h2pag2">
           <h2 animate-in="fly-in-bottom"
               grid-area="lower-third"
-              animate-in-delay="0.4s">
-            Best walk ever!
+              animate-in-duration="1.5s"
+              animate-in-delay="0s">
+             Se ponen pechos, se quitan las costillas para tener menos cintura
           </h2>
         </amp-story-grid-layer>
       </amp-story-page>
 
-      <!-- Stories can use predefined layouts to style the page. Here we're using the `thirds` template. For an overview about the available layouts take a look at the [layouts sample](../../features/layouts/). -->
-      <amp-story-page id="layout-demo">
-        <amp-story-grid-layer template="thirds">
-          <amp-img grid-area="upper-third"
-                   src="https://ampbyexample.com/img/story_thirds_1.jpg"
-                   width="560" height="420"
-                               layout="responsive">
+
+      <amp-story-page id="page-4">
+        <amp-story-grid-layer template="fill">
+          <amp-img src="https://2.bp.blogspot.com/-7-XuRpomXC8/VgD0IwUDSgI/AAAAAAAADqM/0d8qfGBtUOM/s1600/0E2.jpg"
+                   animate-in="pan-right"
+                   animate-in-delay="0"
+                   animate-in-duration="5s"
+                   width="720" height="1280"
+                   layout="responsive">
           </amp-img>
-          <amp-img grid-area="middle-third"
-                   src="https://ampbyexample.com/img/story_thirds_2.jpg"
-                   width="560" height="420"
-                               layout="responsive">
+        </amp-story-grid-layer>
+        <amp-story-grid-layer template="thirds" class="h2pg4">
+          <h2 grid-area="lower-third">
+             hasta se operan los ojos
+          </h2>
+        </amp-story-grid-layer>
+      </amp-story-page>
+
+      <amp-story-page id="page-5">
+        <amp-story-grid-layer template="fill">
+          <amp-img src="https://1.bp.blogspot.com/-QKJU0e2uMcQ/VgD0IgBlIhI/AAAAAAAADqE/CLPXsr8Leqw/s1600/071.jpg"
+                   width="720" height="1280"
+                   layout="responsive">
           </amp-img>
-          <amp-img grid-area="lower-third"
-                   src="https://ampbyexample.com/img/story_thirds_3.jpg"
-                   width="560"
-                   height="420"
+        </amp-story-grid-layer>
+        <amp-story-grid-layer template="thirds" class="h2pg4">
+          <h2 grid-area="lower-third">
+             ¿pero es sano esto de verdad?
+          </h2>
+        </amp-story-grid-layer>
+      </amp-story-page>
+
+      <amp-story-page id="page-6">
+        <amp-story-grid-layer template="fill">
+          <amp-img src="https://2.bp.blogspot.com/-YREQ_JnUblc/VgD0I7I9U_I/AAAAAAAADqI/lvZkymuZG8s/s1600/122.jpg"
+
+                   animate-in="pan-left"
+                   animate-in-delay="0"
+                   animate-in-duration="15s"
+                   width="600" height="600">
+          </amp-img>
+        </amp-story-grid-layer>
+        <amp-story-grid-layer template="thirds" class="texto-6">
+         <h2 grid-area="middle-third">Esto podría ser ya una enfermedad psicológica, adictas a la operaciones estéticas</h2>
+         </amp-story-grid-layer>
+         <amp-story-grid-layer template="thirds" class="texto-7">
+          <h2 grid-area="lower-third" animate-in="fly-in-right"
+          animate-in-delay="3s"
+          animate-in-duration="2s">Aquí les presentamos estos ejemplo, opinen ustedes mismos:</h2>
+          </amp-story-grid-layer>
+      </amp-story-page>
+
+      <amp-story-page id="page-7">
+        <amp-story-grid-layer template="fill">
+          <amp-img src="https://1.bp.blogspot.com/-r5qEObSU5kM/VgD0KNgBhNI/AAAAAAAADqY/xut_rXZCA9Q/s1600/388.jpg"
+                   animate-in="pan-right"
+                   animate-in-delay="0"
+                   animate-in-duration="7s"
+                   width="550" height="650">
+
+          </amp-img>
+        </amp-story-grid-layer>
+      </amp-story-page>
+      <amp-story-page id="page-8">
+        <amp-story-grid-layer template="fill">
+          <amp-img src="https://3.bp.blogspot.com/-D9-FmfeXqjc/VgD0Kok_odI/AAAAAAAADqg/cgW0ncXE5lA/s1600/A45.jpg"
+
+                   width="400"
+                   height="500"
                    layout="responsive">
           </amp-img>
         </amp-story-grid-layer>
       </amp-story-page>
+      <amp-story-page id="page-9">
+        <amp-story-grid-layer template="fill">
+          <amp-img src="https://2.bp.blogspot.com/-pdPH6D1xuek/VgD0JWYzvYI/AAAAAAAADqU/f3b3Sd7vjMU/s1600/176.jpg"
+
+                   width="550" height="650">
+          </amp-img>
+        </amp-story-grid-layer>
+      </amp-story-page>
+      <amp-story-page id="page-10">
+        <amp-story-grid-layer template="fill">
+          <amp-img src="https://1.bp.blogspot.com/-s8CFiaCsvGo/VgD0LNEmAMI/AAAAAAAADqo/2Kdx3GYQb8Q/s1600/DDD.jpg"
+
+                   width="550" height="650">
+          </amp-img>
+        </amp-story-grid-layer>
+      </amp-story-page>
+
+      <amp-story-page id="page-11">
+        <amp-story-grid-layer template="vertical" class="noedge">
+          <div class="wrapper">
+            <amp-img src="https://1.bp.blogspot.com/-bqpDqNephOs/VgD0KYi-2_I/AAAAAAAADqc/DXUZ0UrZOYk/s1600/8D1.jpg"
+    width="720" height="1280"
+    layout="responsive"
+    animate-in="fade-in"
+    animate-in-delay="0.4s">
+</amp-img>
+<amp-img src="https://1.bp.blogspot.com/-QKJU0e2uMcQ/VgD0IgBlIhI/AAAAAAAADqE/CLPXsr8Leqw/s1600/071.jpg"
+    width="720" height="1280"
+    layout="responsive"
+    animate-in="fade-in"
+    animate-in-delay="0.6s">
+</amp-img>
+<amp-img src="https://1.bp.blogspot.com/-r5qEObSU5kM/VgD0KNgBhNI/AAAAAAAADqY/xut_rXZCA9Q/s1600/388.jpg"
+    width="720" height="1280"
+    layout="responsive"
+    animate-in="fade-in"
+    animate-in-delay=".8s">
+</amp-img>
+<amp-img src="https://2.bp.blogspot.com/-pdPH6D1xuek/VgD0JWYzvYI/AAAAAAAADqU/f3b3Sd7vjMU/s1600/176.jpg"
+    width="720" height="1280"
+    layout="responsive"
+    animate-in="fade-in"
+    animate-in-delay="1s">
+</amp-img>
+          </div>
+        </amp-story-grid-layer>
+        <amp-story-grid-layer template="vertical" class="center-text">
+          <h2 class="banner-text"
+  animate-in="whoosh-in-right">
+Pets can lower your stress levels!</h2>
+        </amp-story-grid-layer>
+      </amp-story-page>
+
 
       <!-- A "bookend" panel containing links to other resources will appear on the last page of your story if you include an `amp-story-bookend` that references a [bookend JSON config](/json/bookend.json). -->
       <amp-story-bookend src="https://ampbyexample.com/json/bookend.json" layout="nodisplay">
